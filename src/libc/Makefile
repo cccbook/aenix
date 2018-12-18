@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
 		 -nostartfiles -nodefaultlibs -Wall -Wextra -Werror \
-		 -Wno-unused-function -c  -I /usr/include/x86_64-linux-gnu/
+		 -Wno-unused-function -c  -I/usr/include/x86_64-linux-gnu/
 AS = nasm
 ASFLAGS = -f elf
 OBJECTS = unistd.o start.o string.o

@@ -2,7 +2,7 @@ APPS = init sh
 FS_ROOT = fs_root
 BIN_PATH = $(FS_ROOT)/bin
 WARNINGS = -Wall -Wextra -Werror
-CFLAGS = -m32 -I /usr/include/x86_64-linux-gnu/
+CFLAGS = -m32 -I/usr/include/x86_64-linux-gnu/
 CC = gcc
 FS_SIZE = 4 # in MB
 

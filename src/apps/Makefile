@@ -7,7 +7,7 @@ ASFLAGS = -f elf
 LD = ld
 LDFLAGS = -T link.ld -melf_i386
 LIBC = -L../libc -lc
-STDINCLUDE = -I../libc -I /usr/include/x86_64-linux-gnu/
+STDINCLUDE = -I../libc -I/usr/include/x86_64-linux-gnu/
 
 all: init sh
 
