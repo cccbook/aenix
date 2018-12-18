@@ -7,7 +7,7 @@ OBJECTS = loader.o kmain.o fb.o io.o gdt.o gdt_asm.o pic.o idt.o idt_asm.o \
 CC = gcc
 CFLAGS = -m32 -nostdlib -nostdinc -fno-builtin -fno-stack-protector \
 		 -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -fomit-frame-pointer \
-		 -Wno-unused-function -c
+		 -Wno-unused-function -c -I /usr/include/x86_64-linux-gnu/
 LDFLAGS = -T link.ld -melf_i386
 AS = nasm
 ASFLAGS = -f elf
